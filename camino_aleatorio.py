@@ -1,4 +1,4 @@
-from borracho import BorrachoTadicional
+from borracho import BorrachoTradicional
 from campo import Campo
 from coordenada import Coordenada
 
@@ -30,7 +30,7 @@ def simular_caminata(pasos, numero_de_intentos, tipo_de_borracho):
 
 def graficar(x, y):
     grafica = figure(title='Camino aleatorio', x_axis_label ='pasos', y_axis_label ='distancia recorrida')
-    grafica.line(x, y, legend='distancia media')
+    grafica.line(x, y, legend_label='distancia media')
 
     show(grafica)
 
@@ -56,9 +56,9 @@ def main(distancias_de_caminata, numero_de_intentos, tipo_de_borracho):
 
 def run():
     distancias_de_caminata = [10, 100, 1000, 10000]
-    numero_de_intentos = 100
+    numero_de_intentos = 10000
 
-    main(distancias_de_caminata, numero_de_intentos, BorrachoTadicional)
+    main(distancias_de_caminata, numero_de_intentos, BorrachoTradicional)
 
 if __name__ == '__main__':
     run()

@@ -1,5 +1,4 @@
 import random
-from bokeh.plotting import figure, show
 
 class Borracho:
 
@@ -7,7 +6,7 @@ class Borracho:
         self.nombre = nombre
 
 
-class BorrachoTadicional(Borracho):
+class BorrachoTradicional(Borracho):
 
     def __init__(self, nombre):
         super().__init__(nombre)
